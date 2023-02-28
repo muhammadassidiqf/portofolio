@@ -6,10 +6,6 @@ body {
     vertical-align: middle;
 }
 
-.bg-navbar {
-    background-color: #FAFAFA;
-}
-
 .active {
     text-decoration: underline !important;
     color: #5A4FCF;
@@ -248,7 +244,16 @@ ul.a {
 }
 
 @media (min-width:320px) and (max-width:576px) {
-
+    header {
+        margin-top: 40px !important;
+        background-color: #dfdfdf;
+        background-position: center center;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-clip: text;
+        padding: 0;
+    }
     .timeline-content-info-title,
     .timeline-content-info-date {
         color: rgba(255, 255, 255, .9);
@@ -266,11 +271,25 @@ ul.a {
         color: rgba(255, 255, 255, .9);
         font-size: 16px;
         font-size: 1rem;
-        transform: translateZ(80px);
+    }
+    .cd-timeline-content li {
+        color: rgba(255, 255, 255, .9);
+        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
 @media (min-width:576px) and (max-width:768px) {
+    header {
+        margin-top: 40px !important;
+        background-color: #dfdfdf;
+        background-position: center center;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-clip: text;
+        padding: 0;
+    }
 
     .timeline-content-info-title,
     .timeline-content-info-date {
@@ -289,11 +308,21 @@ ul.a {
         color: rgba(255, 255, 255, .9);
         font-size: 16px;
         font-size: 1rem;
-        transform: translateZ(80px);
     }
 }
 
 @media (min-width:768px) and (max-width:992px) {
+    header {
+        margin-top: 40px !important;
+        background-color: #dfdfdf;
+        background-position: center center;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-clip: text;
+        padding: 0;
+    }
+
     #cd-timeline {
         margin-top: 3em;
         margin-bottom: 3em;
@@ -362,6 +391,17 @@ ul.a {
 }
 
 @media (min-width:992px) and (max-width:1200px) {
+    header {
+        margin-top: 40px !important;
+        background-color: #dfdfdf;
+        background-position: center center;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-clip: text;
+        padding: 0;
+    }
+
     #cd-timeline {
         margin-top: 3em;
         margin-bottom: 3em;
