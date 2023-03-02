@@ -354,7 +354,7 @@ p {
     margin-bottom: -80px;
 }
 .space-about {
-    margin-top: -80px;
+    margin-top: 80px;
     margin-bottom: 80px;
 }
 
@@ -376,7 +376,6 @@ p {
     width: 100%;
     border-radius: 5px;
     font-size: 32px;
-
 }
 
 .social-links{
@@ -400,18 +399,22 @@ p {
 .social-links:nth-child(1):hover{
     background: #a7a7a7;
 }
+
 .social-links:nth-child(2):hover{
     background: #0072B1;
 }
+
 .social-links:nth-child(3){
     position: relative;
     border-radius: 5px;
     overflow: hidden;
     
 }
+
 .social-links:nth-child(3):hover {
     background: transparent;
 }
+
 .social-links:nth-child(3)::before {
     content: "";
     position: absolute;
@@ -429,6 +432,10 @@ p {
 }
 .social-links:nth-child(4):hover {
     background: #3b70ec;
+}
+
+.social-links:nth-child(5):hover{
+    background: #a7a7a7;
 }
 
 @media (min-width:320px) and (max-width:576px) {
