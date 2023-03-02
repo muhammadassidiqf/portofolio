@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () { // On DOM Load initi
 // })
 
 const scrollElements = document.querySelectorAll(".js-scroll");
+const scrollHome = document.querySelectorAll(".space");
 
 const elementInView = (el, dividend = 1) => {
   const elementTop = el.getBoundingClientRect().top;
@@ -75,15 +76,25 @@ const hideScrollElement = (element) => {
 const handleScrollAnimation = () => {
   scrollElements.forEach((el) => {
     if (elementInView(el, 1.25)) {
-      displayScrollElement(el);
+      displayScrollElement(el);    
     } else if (elementOutofView(el)) {
       hideScrollElement(el)
+    }
+  })
+}
+const handleScrollNavbar = () => {
+  scrollHome.forEach((el) => {
+    if (elementInView(el, 1.25)) {
+      $('.nav-top').addClass('fixed');
+    } else if (elementOutofView(el)) {
+      $('.nav-top').removeClass('fixed');
     }
   })
 }
 
 window.addEventListener("scroll", () => {
   handleScrollAnimation();
+  handleScrollNavbar();
 });
 
 var makeWinHeight = function () {
@@ -102,4 +113,3 @@ $(window).resize(function () {
 
 var scene = document.getElementById('scene');
 var parallax = new Parallax(scene);
-

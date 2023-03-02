@@ -210,6 +210,18 @@ span.input-cursor.typing {
     animation: slide-in-right 1s ease-in-out both;
 }
 
+.nav-space{
+    margin-bottom: 100px !important;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #dfdfdfbb;
+    transition: background-color 0.2s linear;
+}
+
 @keyframes slide-in-left {
     0% {
         -webkit-transform: translateX(-100px);
